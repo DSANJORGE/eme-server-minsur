@@ -1,0 +1,16 @@
+<page>
+
+  <property name="edithomename">fullscreenchat</property>
+
+  <path-action name="EntityModule.getEntity" />
+
+  <property name="channeltype">agententitychat</property>
+
+  <path-action name="ChatModule.loadChatChannel" />
+	<path-action name="AgentModule.loadAgentContext" />
+
+	<property name="defaultscenarioid">chat_detection</property>
+	
+  <property name="fallbackdirectory">/${applicationid}/views/modules/default/editors/aichatsearch</property>
+
+  </page>

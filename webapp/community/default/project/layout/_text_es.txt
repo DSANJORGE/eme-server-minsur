@@ -1,0 +1,20 @@
+#
+#Fri Jul 17 14:04:16 CST 2026
+Blog=Blog
+Chat=Charlar
+Contact=Contacto
+Facebook=Facebook
+Files=Archivos
+Finances=Finanzas
+Follow\ Us=S\u00EDganos
+Goals=Objetivos
+Instagram=Instagram
+Project\ Files=Archivos del proyecto
+Referrals=Referencias
+Settings=Ajustes
+Store=Almacenar
+Team\ Circle=C\u00EDrculo de equipo
+Testimonials=Testimonios
+View\ Members=Ver miembros
+Visit\ Us=Vis\u00EDtanos
+Website=Sitio web

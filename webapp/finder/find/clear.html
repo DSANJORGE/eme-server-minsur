@@ -1,0 +1,36 @@
+<html>
+<p style="max-width: 1000px; ">
+##set( $path = "/finder/catalog/data/lists/catalogsettings/")
+
+$userprofile
+
+$canviewsettings
+
+#set( $path = "/site/find/views/settings/modules/asset/transcoding/index.html")
+
+<br>
+##set( $path = "/eme/views/modules/default/editors/fullscreenchat/chatterbox/index.html")
+
+<h3>$path</h3>
+$pageManager.clearCache()
+#set($p = $pageManager.getPage($path,false) )
+
+Exists = $p.exists()
+
+<br>
+p.getPageSettings().getFallbackParents()  = $p.getPageSettings().getFallbackParents() 
+<br>
+Path: <a href="http://localhost.com:8080/$path">$path</a>
+<br>
+
+<br>
+INCLUDE
+<br>
+$p.getPageSettings().getPath() = $p.getPageSettings().getPath()
+<br>
+$p.getPageSettings().getGenerators() 
+<br>
+##$pages.include($path, $context)
+
+</p>
+</html>

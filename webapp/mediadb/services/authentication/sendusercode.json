@@ -1,0 +1,28 @@
+#set( $email = $context.getRequestParameter("email") )
+#ifnull($email)
+#set($email = $context.getPageValue("emailaddress"))
+#end
+
+#if($commandSucceeded == "nouser")
+	{
+		"response": {
+			"status": "nouser",
+			"email": "$email",
+			"allowguestregistration": #if($allowguestregistration)true#else false#end
+		}
+	}
+#elseif($commandSucceeded == "error")
+	{
+		"response": {
+			"status": "error",
+			"error": "$!error"
+		}
+	}
+#elseif($commandSucceeded == "ok")
+	{
+		"response": {
+			"status": "ok",
+			"email": "$email"
+		}
+	}
+#end

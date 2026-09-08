@@ -1,0 +1,19 @@
+#
+#Wed Aug 12 22:08:46 EDT 2026
+AI\ Chat\ Search=AI \u804A\u5929\u641C\u7D22
+Account\ Settings=\u8D26\u6237\u8BBE\u7F6E
+Collapse\ sidebar=\u6298\u53E0\u4FA7\u8FB9\u680F
+Dashboard=\u4EEA\u8868\u76D8
+Dashboard\ Reports=\u4EEA\u8868\u76D8\u62A5\u544A
+Desktop\ Settings=\u684C\u9762\u8BBE\u7F6E
+EME=\u6B27\u6D32\u8D27\u5E01\u5C40
+Guides=\u6307\u5357
+Language=\u8BED\u8A00
+Login=\u767B\u5F55
+Logout=\u9000\u51FA\u767B\u5F55
+My\ Account=\u6211\u7684\u8D26\u6237
+My\ Orders=\u6211\u7684\u8BA2\u5355
+Pending\ Orders=\u6302\u5355
+Theme=\u4E3B\u9898
+View\ Bookmarks=\u67E5\u770B\u4E66\u7B7E
+account=\u8D26\u6237

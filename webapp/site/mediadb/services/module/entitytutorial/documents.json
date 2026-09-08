@@ -1,0 +1,41 @@
+## Site page: the reference documents (entityasset) attached to a tutorial —
+## what the app's Recursos tab lists and what "Abrir fuente" opens.
+## Video: the server-rendered video.mp4 rendition when it exists, else the
+## static copy under /testu/video/<asset name>. Captions come from the asset's
+## videotrack record (filled by the informatics autotranscribe skill).
+#set($docs = $mediaarchive.query("entityasset").exact("entitytutorial", $context.getRequestParameter("entitytutorial")).sort("name").search())
+{
+  "response": { "status": "ok" },
+  "documents": [
+    #foreach($doc in $docs)
+      #if($foreach.count > 1),#end
+      #set($asset = $mediaarchive.getAsset($!doc.primarymedia))
+      {
+        "id": #jesc($doc.id),
+        "title": #jesc($doc.name),
+        "pages": #jesc($!doc.totalpages),
+        "embedded": "$!doc.entityembeddingstatus",
+        "preview": "$siteroot$mediaarchive.asLinkToPreview($!doc.primarymedia, 'image1200x628')"
+        #if($asset && $asset.fileformat == 'mp4')
+          #if($mediaarchive.getGeneratedContent($asset, 'video.mp4').exists())
+          ,"video": "$siteroot$mediaarchive.asLinkToPreview($asset, 'video.mp4')"
+          #else
+          ,"video": "/site/mediadb/testu/video/$asset.name"
+          #end
+          #set($track = $mediaarchive.query("videotrack").exact("assetid", $asset.id).searchOne())
+          ,"captions": [
+          #if($track && $track.getValue("captions"))
+            #foreach($c in $track.getValue("captions"))
+              #if($foreach.count > 1),#end
+              #set($start = $c.timecodestart / 1000)
+              {"start": $start, "text": #jesc($c.cliplabel)}
+            #end
+          #end
+          ]
+        #end
+        ,"chapters": #jesc($!doc.chapters)
+        ,"credit": #jesc($!doc.credit)
+      }
+    #end
+  ]
+}

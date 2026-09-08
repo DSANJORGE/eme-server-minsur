@@ -1,0 +1,16 @@
+<page>
+	<path-action name="DataEditModule.parseMultPart" />
+	
+	<path-action name="DataEditModule.saveData">
+		<searchtype>librarycollection</searchtype>
+	</path-action>
+
+  	<path-action name="AssetEditModule.handleUploads"/>
+  
+	<path-action name="ProjectModule.loadCollection" />
+	
+   	<path-action name="Admin.loadPermissions"/>
+   	
+  	<path-action name="Admin.allowViewing"/>
+
+</page>

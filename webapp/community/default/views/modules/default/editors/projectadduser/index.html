@@ -1,0 +1,34 @@
+
+<div id="projectadduser" 
+	class="editdiv pickerresults genericdialogpicker" 
+	data-edithome="${edithome}"
+	data-edithomeid="projectadduser"
+>
+	<div class="clickableresultlist"
+		data-oemaxlevel="1"
+		data-url="$apphome/project/channel/subscribers/addsave.html"
+		data-targetdiv="clickableresultlist" 
+		data-addtoteam="true"
+		#set($collectionid = $context.getRequestParameter("collectionid"))
+		data-collectionid="$!{collectionid}"
+		data-ajaxreloadtargets="subscriberssidebar"
+	>	
+		<div class="overflow-y">
+
+			$context.putPageValue("enableactions", "false")
+			$context.putPageValue("showaddnew", "false")
+
+			#set($viewid = "userpickerresults") 
+			$context.putPageValue("viewid", $viewid)
+
+			#set($module = $mediaarchive.getCachedData("module","user"))
+			$context.putPageValue("module", $module)
+			
+			#set($searchhome = "$apphome/views/modules/user/results/projectadduser")
+			$context.putPageValue("searchhome", $searchhome)
+
+			$pages.include("${searchhome}/searchinclude.html",$context)
+		</div>
+	</div>
+
+</div>

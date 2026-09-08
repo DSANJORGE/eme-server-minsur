@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<page>
+
+	<script id="jquery-autosave" src="/${applicationid}/components/javascript/jquery.autosave.min.js" />
+	<inner-layout>/${applicationid}/theme/layouts/section.html</inner-layout>
+	<path-action name="MediaArchiveModule.getAsset"  />
+	
+</page>

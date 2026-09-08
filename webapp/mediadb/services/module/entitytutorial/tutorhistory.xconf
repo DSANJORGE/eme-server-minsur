@@ -1,0 +1,13 @@
+<page>
+
+	<generator name="velocityGenerator" mimetypes="text/json"/>
+	<!-- <path-action bean="jsonUtil" name="PageValue.loadPageVariable" allowduplicates="true" alltypes="true" />
+	<path-action name="JsonAssetModule.preprocess" alltypes="true"/> -->
+
+	<property name="module">entitytutorial</property>
+	<property name="channeltype">agenttutorchat</property>
+	<path-action name="ChatModule.loadChatChannel" />
+
+	<path-action name="TopicModule.loadTutorialHistory" />
+
+</page>

@@ -1,0 +1,9 @@
+#
+#Tue Aug 18 17:27:15 CST 2026
+Attachments=Adjuntos
+Cancel\ Reply=Cancelar respuesta
+Emoji=El emoji
+Message=Mensaje
+Processing=Procesamiento
+Replying\ to=En respuesta a
+Send=Enviar

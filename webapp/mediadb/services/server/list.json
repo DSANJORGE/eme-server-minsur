@@ -1,0 +1,19 @@
+#set($emeservers = $mediaarchive.query("emeserver").all().search())
+
+{
+  "response": {
+    "status": "ok",
+    "userid": "$user.id"
+  },
+	"servers": [
+		#foreach($emeserver in $emeservers)
+			#if($foreach.count > 1),#end
+		{
+			"id": #jesc($emeserver.id),
+			"name": #jesc($emeserver.name),
+			"mediadbroot": #jesc($emeserver.mediadbroot),
+			"iconasset": #jesc($emeserver.iconasset)
+		}
+		#end
+	]
+}

@@ -1,0 +1,5 @@
+#
+#Tue Aug 18 16:50:36 CST 2026
+Featured\ Folders=Carpetas destacadas
+Search=B\u00FAsqueda
+View=Ver

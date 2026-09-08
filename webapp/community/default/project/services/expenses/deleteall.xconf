@@ -1,0 +1,15 @@
+<page>
+
+	<path-action name="ProjectModule.loadCollection"></path-action>
+	<path-action name="DataEditModule.deleteHits"/>
+	
+    <path-action name="Admin.loadPermissions"/>
+
+	<permission name="view">
+		<or>
+			<action name="ProjectModule.canEditCollection" />
+			<action name="ProjectModule.isOnTeam" />			
+		</or>
+	</permission>
+	
+</page>

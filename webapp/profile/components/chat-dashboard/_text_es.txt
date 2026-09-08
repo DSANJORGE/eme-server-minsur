@@ -1,0 +1,7 @@
+#
+#Fri Aug 21 13:12:30 CST 2026
+Edit\ Profile=Editar perfil
+Login\ to\ say\ Hello=Iniciar sesi\u00F3n para saludar
+Open\ Chat=Chat abierto
+Portfolio=Portafolio
+Say\ Hello=Di hola

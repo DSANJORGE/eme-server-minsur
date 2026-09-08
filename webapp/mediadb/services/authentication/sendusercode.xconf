@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+	<permission name="view">
+		<blank/>
+	</permission>
+	<path-action name="JsonAdminModule.preprocess" />
+	<page-action name="User.loadUserCategory" />
+	<page-action name="Admin.emailUserLoginCode">
+		<property name="subject">Login Code</property>
+		<property name="emaillayout">/${applicationid}/authentication/sendusercodeemail.html</property>
+	</page-action>
+</page>

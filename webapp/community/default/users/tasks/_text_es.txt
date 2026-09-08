@@ -1,0 +1,14 @@
+#
+#Tue Aug 18 16:51:10 CST 2026
+Closed\ On=Cerrado el
+Completed=Terminado
+Current\ Month=Mes actual
+Go\ Back=Regresa
+Month=Mes
+Points=Puntos
+Points\ Report=Informe de puntos
+Resolve=Resolver
+Resolve\ Goal=Resolver el objetivo
+Ticket=Boleto
+Tickets\ and\ Tasks=Tickets y Tareas
+Total=Total

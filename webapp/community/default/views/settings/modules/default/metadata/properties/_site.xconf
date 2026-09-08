@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+   <property name="subtab">${module}fields</property>
+   
+   <property name="tab">${module}fields</property>
+   
+   <property name="searchtype">${module}</property>
+   
+   <property name="dataroot">/${applicationid}/views/settings/modules/${module}/metadata</property>
+   
+   <inner-layout>${dataroot}/properties/innerlayout.html</inner-layout>
+   
+</page>

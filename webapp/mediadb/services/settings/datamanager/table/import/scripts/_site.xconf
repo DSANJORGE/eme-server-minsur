@@ -1,0 +1,5 @@
+<page>
+	<property name="dataroot">/${applicationid}/services/settings/datamanager/table</property>
+	<property name="packageroot">${dataroot}/import/scripts</property>
+
+</page>
