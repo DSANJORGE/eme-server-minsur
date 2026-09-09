@@ -7,7 +7,7 @@ webapp/WEB-INF/elastic/
 webapp/WEB-INF/tmp/
 webapp/WEB-INF/temp/
 webapp/WEB-INF/trash/
-data
+
 
 plugins/catalog/
 plugins/finder/
@@ -20,3 +20,9 @@ plugins/openedit/
 plugins/app-genailabs/
 .env
 plugins/app/
+data/exports/
+data/repos/
+data/webapp/
+data/site/catalog/*
+!data/site/catalog/fields
+!data/site/catalog/lists

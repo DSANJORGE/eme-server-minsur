@@ -1,0 +1,8 @@
+#
+#Thu Aug 20 14:15:25 CST 2026
+Day=D\u00EDa
+Days=D\u00EDas
+Hour=Hora
+Hours=Horas
+Minute=Minuto
+Minutes=Minutos

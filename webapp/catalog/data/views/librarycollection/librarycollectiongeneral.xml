@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties> 
+  
+  <property id="assetportrait"/>
+
+  <property id="name"/>
+
+  <property id="organizationstatus"/>
+
+  <property id="urlname"/>
+    
+  <property id="priviacylevel" />
+  
+  <property id="collectivecategorytab"/>  
+  
+  <property id="semantictopics"/>
+  
+</properties>

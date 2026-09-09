@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties beanname="folderSearcher"> 
+  <property id="id" editable="true" stored="true" index="true">ID 
+    <name> 
+      <language id="de"><![CDATA[Ich würde]]></language>  
+      <language id="en"><![CDATA[ID]]></language>  
+      <language id="es"><![CDATA[identificación]]></language>  
+      <language id="fr"><![CDATA[ID]]></language> 
+    </name> 
+  </property>  
+  <property id="name" editable="true" stored="true" index="true">Name 
+    <name> 
+      <language id="de"><![CDATA[Name]]></language>  
+      <language id="en"><![CDATA[Name]]></language>  
+      <language id="es"><![CDATA[Nombre]]></language>  
+      <language id="fr"><![CDATA[Prénom]]></language> 
+    </name> 
+  </property>  
+  <property id="archivepath" editable="true" stored="true" index="true">Archive Path 
+    <name> 
+      <language id="de"><![CDATA[Archivpfad]]></language>  
+      <language id="en"><![CDATA[Archive Path]]></language>  
+      <language id="es"><![CDATA[archivo Camino]]></language>  
+      <language id="fr"><![CDATA[Chemin des archives]]></language> 
+    </name> 
+  </property>  
+  <property id="expirationperiod" editable="true" stored="true" index="true">Expiration Period 
+    <name> 
+      <language id="de"><![CDATA[Ablaufzeitraum]]></language>  
+      <language id="en"><![CDATA[Expiration Period]]></language>  
+      <language id="es"><![CDATA[Período de caducidad]]></language>  
+      <language id="fr"><![CDATA[Période d&#39;expiration]]></language> 
+    </name> 
+  </property>  
+  <property id="deleteasset" editable="true" stored="true" index="true"> 
+    <name> 
+      <language id="en"><![CDATA[Auto Delete Asset]]></language>  
+      <language id="de"><![CDATA[Automatisches Löschen von Vermögenswerten]]></language>
+      <language id="fr"><![CDATA[Suppression automatique des actifs]]></language>
+      <language id="es"><![CDATA[Eliminación automática de activos]]></language>
+    </name> 
+  </property>  
+  <property id="deleteoriginal" editable="true" stored="true" index="true"> 
+    <name> 
+      <language id="en"><![CDATA[Auto Delete Originals]]></language>  
+      <language id="de"><![CDATA[Automatische Löschung der Originale]]></language>
+      <language id="fr"><![CDATA[Supprimer automatiquement les originaux]]></language>
+      <language id="es"><![CDATA[Eliminar automáticamente los originales]]></language>
+    </name> 
+  </property>  
+  <property id="deletegenerated" editable="true" stored="true" index="true"> 
+    <name> 
+      <language id="en"><![CDATA[Auto Delete Thumbnails]]></language>  
+      <language id="de"><![CDATA[Automatisches Löschen von Miniaturansichten]]></language>
+      <language id="fr"><![CDATA[Supprimer automatiquement les vignettes]]></language>
+      <language id="es"><![CDATA[Eliminación automática de miniaturas]]></language>
+    </name> 
+  </property>  
+  <!--- library? --> 
+</properties>
