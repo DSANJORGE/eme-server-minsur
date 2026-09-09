@@ -8,8 +8,6 @@ SERVERHOME="$2"
 SERVERNAME="$(basename "${SERVERHOME:-}")"
 
 
-echo "*** Running $CMD command"
-
  # Verify not running as root if CMD is not dockerstart
 if [[ "$CMD" != "dockerstart" ]]; then
     if [[ $(id -u) -eq 0 ]]; then
@@ -162,6 +160,10 @@ case "$CMD" in
     fi
     git fetch upstream
     git merge upstream/main --allow-unrelated-histories -X theirs
+    #git checkout upstream/main -- .
+
+    # Fix any conflicts that may arise during the merge
+    #git checkout upstream/main -- .gitignore
 
   ;;
 
