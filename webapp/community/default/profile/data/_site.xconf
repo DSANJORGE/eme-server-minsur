@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<page>
-    <path-action name="FinderModule.loadEmeProfileData"></path-action>
-    <property name="virtual">true</property>
-    <inner-layout>/${applicationid}/profile/data/layout.html</inner-layout>
-</page>

@@ -1,6 +1,0 @@
-<properties>
-  <property id="noidea" bonuspercentage="1">No Idea</property>
-  <property id="notsure" bonuspercentage="0">Not Sure</property>
-  <property id="mostlysure" bonuspercentage="2">Mostly Sure</property>
-  <property id="confident" bonuspercentage="4">Confident</property>
-</properties>

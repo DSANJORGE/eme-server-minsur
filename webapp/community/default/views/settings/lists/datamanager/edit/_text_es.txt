@@ -1,7 +1,0 @@
-#
-#Wed Aug 26 02:33:30 BDT 2026
-Cancel=Cancelar
-Delete=Eliminar
-Delete\ Database\ Record?=\u00BFEliminar el registro de la base de datos?
-Record\ Deleted=Registro eliminado
-Save=Guardar

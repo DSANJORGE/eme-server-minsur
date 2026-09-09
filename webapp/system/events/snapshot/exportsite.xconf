@@ -1,8 +1,0 @@
-<page>
-	<path-action name="PageValue.loadPageVariable"  bean="searcherManager" alltypes="true"/>
-	<property name="eventname">Export Pending Snapshots</property>	
-	
-	<path-action name="MediaAdminModule.runExport" alltypes="true" />
-
-	
-</page>

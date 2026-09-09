@@ -1,5 +1,0 @@
-<properties>
-	<property id="active"><![CDATA[Active]]></property>
-	<property id="expired"><![CDATA[Expired]]></property> 
-	<property id="finished"><![CDATA[Finished]]></property>
-</properties>
