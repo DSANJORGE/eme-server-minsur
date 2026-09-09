@@ -22,7 +22,6 @@ plugins/app-genailabs/
 plugins/app/
 data/exports/
 data/repos/
-data/webapp/
 data/site/catalog/*
 !data/site/catalog/fields
 !data/site/catalog/lists
