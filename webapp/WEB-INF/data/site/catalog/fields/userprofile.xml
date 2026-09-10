@@ -1,0 +1,8 @@
+
+<properties>
+  <property id="databasecurrentsearch" index="true" deleted="false" editable="true" stored="true">New
+    <name>
+      <language id="en"><![CDATA[databasecurrentsearch]]></language>
+    </name>
+  </property>
+</properties>

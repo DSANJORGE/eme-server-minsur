@@ -1,8 +1,6 @@
 .DS_Store
 build/
 tomcat/logs
-webapp/WEB-INF/data/
-!webapp/WEB-INF/data/.gitkeep
 webapp/WEB-INF/elastic/
 webapp/WEB-INF/tmp/
 webapp/WEB-INF/temp/
@@ -21,5 +19,7 @@ plugins/app-genailabs/
 plugins/testu/
 plugins/app/
 .env
-data/exports/
-data/repos/
+
+
+**/data/exports/
+**/data/repos/
