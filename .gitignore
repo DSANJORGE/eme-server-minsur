@@ -18,11 +18,8 @@ plugins/manager/
 plugins/mediadb/
 plugins/openedit/
 plugins/app-genailabs/
-.env
+plugins/testu/
 plugins/app/
+.env
 data/exports/
 data/repos/
-data/site/catalog/*
-!data/site/catalog/fields
-!data/site/catalog/lists
-plugins/testu/
