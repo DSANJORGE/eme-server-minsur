@@ -1,2 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
-<properties beanname="dataSearcher"/>
+<properties beanname="dataSearcher">
+  <property id="emeprofile" index="true" datatype="list" editable="true" stored="true" viewtype="entity">New
+    <name>
+      <language id="en"><![CDATA[EME Profile]]></language>
+    </name>
+  </property>
+</properties>

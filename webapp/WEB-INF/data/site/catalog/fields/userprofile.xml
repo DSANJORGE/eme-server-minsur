@@ -1,8 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
-<properties>
-  <property id="databasecurrentsearch" index="true" deleted="false" editable="true" stored="true">New
+<properties> 
+  <property id="databasecurrentsearch" index="true" deleted="false" editable="true" stored="true">New 
+    <name> 
+      <language id="en"><![CDATA[databasecurrentsearch]]></language> 
+    </name> 
+  </property>  
+  <property id="suitemodulesort" index="true" deleted="false" editable="true" stored="true">New 
+    <name> 
+      <language id="en"><![CDATA[suitemodulesort]]></language> 
+    </name> 
+  </property>  
+  <property id="view_entityassetresultstable" index="true" deleted="false" editable="true" stored="true">New 
+    <name> 
+      <language id="en"><![CDATA[view_entityassetresultstable]]></language> 
+    </name> 
+  </property>  
+  <property id="entitytopic_entitytabopen" index="true" deleted="false" editable="true" stored="true">New
     <name>
-      <language id="en"><![CDATA[databasecurrentsearch]]></language>
+      <language id="en"><![CDATA[entitytopic_entitytabopen]]></language>
     </name>
   </property>
 </properties>

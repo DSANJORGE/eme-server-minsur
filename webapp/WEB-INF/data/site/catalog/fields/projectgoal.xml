@@ -1,2 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
-<properties beanname="dataSearcher"/>
+<properties beanname="dataSearcher">
+  <property id="librarycollection" index="true" filter="true" internalfield="false" deleted="false" datatype="list" editable="true" stored="true" viewtype="entity">New
+    <name>
+      <language id="de"><![CDATA[Sammlungen]]></language>
+      <language id="en"><![CDATA[Collections]]></language>
+      <language id="es"><![CDATA[Colecciones]]></language>
+      <language id="fr"><![CDATA[Les collections]]></language>
+    </name>
+  </property>
+</properties>

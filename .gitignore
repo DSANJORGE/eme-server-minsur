@@ -23,3 +23,6 @@ plugins/app/
 
 **/data/exports/
 **/data/repos/
+**/data/site/catalog/assets/
+**/data/site/catalog/originals/
+**/data/site/catalog/generated/
