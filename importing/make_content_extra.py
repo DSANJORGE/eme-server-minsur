@@ -38,7 +38,7 @@ def block(sec, heading, explicacion, q):
     row(sec, order + 2, 'paragraph', '', explicacion)
     q_id += 1
     text, opts, correct, level, rationale = q
-    questions.append({'id': q_id, 'question': text, 'correctoption': correct, 'mcqcognitivelevel': level,
+    questions.append({'id': q_id, 'question': text, 'correctoption': correct, 'mcqcognitivelevel': {'Baja': 'beginner', 'Media': 'competent', 'Alta': 'expert'}.get(level, level),
                       'option_a': opts[0], 'option_b': opts[1], 'option_c': opts[2], 'option_d': opts[3],
                       'option_e': '', 'option_f': '', 'rationale': rationale})
     row(sec, order + 3, 'mcq', '', '', q_id)
