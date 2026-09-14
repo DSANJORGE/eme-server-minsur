@@ -63,6 +63,9 @@ def put(table, row):
         print('  !', table, row['id'], r.get('response'))
     return ok
 
+# Source difficulty labels -> canonical mcqcognitivelevel ids (learning engine v1 stores only beginner|competent|expert).
+DIFFICULTY = {'baja': 'beginner', 'media': 'competent', 'alta': 'expert'}
+
 def off(v, n):
     return str(int(v) + n) if v not in (None, '') else ''
 
@@ -79,7 +82,7 @@ def main(con_assets=True):
                      playbackentitymoduleid='entitytutorial', playbackentityid=cfg['tutorial'])
                 for r in filas(curso, 'componentsection')]
         qs = [dict(id=off(r['id'], n), question=r['question'], correctoption=r['correctoption'],
-                   mcqcognitivelevel=r['cognitivelevel'], rationale=r['rationale'],
+                   mcqcognitivelevel=DIFFICULTY.get(r['cognitivelevel'].strip().lower(), r['cognitivelevel']), rationale=r['rationale'],
                    **{k: r[k] for k in ('option_a', 'option_b', 'option_c', 'option_d', 'option_e', 'option_f')})
               for r in filas(curso, 'entityquestion')]
         cont = [dict(id=off(r['id'], n), componenttype=TIPO[r['componenttype']], contentrole=ROL[r['contentrole']],
