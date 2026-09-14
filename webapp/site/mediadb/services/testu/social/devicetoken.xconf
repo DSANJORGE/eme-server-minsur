@@ -1,0 +1,4 @@
+<page>
+  <path-action name="TestUSocialModule.deviceToken"/>
+  <permission name="view"><user/></permission>
+</page>
