@@ -29,7 +29,8 @@ List turns = []
 for (MultiValued m in archive.query("chatterbox").exact("channel", channelid).exact("functionname", "chat_tutor_usercomment").sort("dateDown").hitsPerPage(limit * 2).search()) {
   if ("system".equals(m.get("messagetype"))) {
     def q = null
-    try { q = m.getJSONValue("agentcontextvalues")?.get("query") } catch (Exception e) { }
+    // MultiValued.getJSONValue no longer exists: the swallowed error dropped every learner turn.
+    try { q = new groovy.json.JsonSlurper().parseText(m.get("agentcontextvalues") ?: "{}")?.get("query") } catch (Exception e) { }
     if (q) turns << [id: m.getId(), from: "user", text: q.toString(), date: m.get("date")]
   } else if ("agent".equals(m.get("user"))) {
     String text = m.get("message") ?: ""
