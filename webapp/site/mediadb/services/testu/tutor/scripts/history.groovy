@@ -21,6 +21,10 @@ int limit = 50
 try { limit = Math.max(1, Math.min(200, Integer.parseInt(context.getRequestParameter("limit") ?: "50"))) } catch (Exception e) {}
 
 List turns = []
+// A session's per-question thread (its system rows carry questionid) stays in the session: the
+// tutor tab shows only the general conversation. Newest first, a reply row comes right before its
+// system row, so a reply is dropped with the question it answered.
+Map pendingReply = null
 // ponytail: functionname is indextype="not_analyzed" on chatterbox (see computemastery.groovy's
 // own .exact("functionname", "chat_tutor_usercomment")), so filtering both fields in the query
 // is safe and cheaper than pulling the whole channel; a channel holds a few hundred rows at most.
@@ -28,14 +32,19 @@ List turns = []
 // `limit` turns), then reversed below to the oldest-first response order.
 for (MultiValued m in archive.query("chatterbox").exact("channel", channelid).exact("functionname", "chat_tutor_usercomment").sort("dateDown").hitsPerPage(limit * 2).search()) {
   if ("system".equals(m.get("messagetype"))) {
-    def q = null
+    def v = null
     // MultiValued.getJSONValue no longer exists: the swallowed error dropped every learner turn.
-    try { q = new groovy.json.JsonSlurper().parseText(m.get("agentcontextvalues") ?: "{}")?.get("query") } catch (Exception e) { }
+    try { v = new groovy.json.JsonSlurper().parseText(m.get("agentcontextvalues") ?: "{}") } catch (Exception e) { }
+    def q = v?.get("query")
+    if (v?.get("questionid")) { pendingReply = null; continue }
+    if (pendingReply) { turns << pendingReply; pendingReply = null }
     if (q) turns << [id: m.getId(), from: "user", text: q.toString(), date: m.get("date")]
   } else if ("agent".equals(m.get("user"))) {
+    if (pendingReply) { turns << pendingReply; pendingReply = null }
     String text = m.get("message") ?: ""
-    if (text.trim()) turns << [id: m.getId(), from: "tutor", text: text, date: m.get("date")]
+    if (text.trim()) pendingReply = [id: m.getId(), from: "tutor", text: text, date: m.get("date")]
   }
 }
+if (pendingReply) turns << pendingReply
 List ordered = turns.reverse()
 reply([ok: true, turns: ordered.size() > limit ? ordered[-limit..-1] : ordered])
